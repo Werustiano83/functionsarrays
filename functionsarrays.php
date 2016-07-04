@@ -74,4 +74,13 @@
 		print $upperwinner;
 		?>
 	</p>
+	<p>
+		<?php
+		// user definde functions
+		function aboutMe ($name,$age) {
+			echo "Hello! My name is " . $name . ", and I am " . $age . " years old.";
+		}
+		aboutMe("Raul", 36);
+		?>
+	</p>
 </html>
