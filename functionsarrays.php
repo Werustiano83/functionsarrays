@@ -5,7 +5,6 @@
 		// and print it to the screen
 		$redondo = round(9.59483);
 		print $redondo;
-
 		?>
 	</p>
 	<p>
@@ -45,7 +44,34 @@
 		// Reverse sort your array and print the joined elements to the screen
 		$rideshare = array("Uber", "Lyft", "Juno", "Maven");
 		rsort($rideshare);
-		print join(":", $rideshare); //":" adds a colon but not a space
+		print join(":", $rideshare); //":" adds a colon but not a space0
+		?>
+	</p>
+	<p>
+		<?php
+		// Create an array and push on the names
+		// of your closest family and friends
+		$famfriends = array();
+		array_push($famfriends, "Ana");
+		array_push($famfriends, "Ixchel");
+		array_push($famfriends, "Adrian");
+		array_push($famfriends, "Emiliano");
+		array_push($famfriends, "Satopare");
+		array_push($famfriends, "Satamare");
+
+		// Sort the list
+		sort($famfriends);
+		print join(" ", $famfriends);
+		?>
+	</p>
+	<p>
+		<?php
+		// Randomly select a winner!
+		$winner = $famfriends[rand(0, 5)];
+
+		// Print the winner's name in ALL CAPS
+		$upperwinner = strtoupper($winner);
+		print $upperwinner;
 		?>
 	</p>
 </html>
