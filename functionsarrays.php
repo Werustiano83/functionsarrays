@@ -16,4 +16,19 @@
 		print $redondo3;
 		?>
 	</p>
+	<p>
+		<?php
+		$meses = array();
+		array_push($meses, "enero");
+		array_push($meses, "febrero");
+		array_push($meses, "marzo");
+		array_push($meses, "abril");
+		array_push($meses, "mayo");
+		print count($meses);
+
+		// Create an array and push 5 elements on to it, then
+		// print the number of elements in your array to the screen
+
+		?>
+	</p>
 </html>
