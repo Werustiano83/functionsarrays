@@ -31,4 +31,21 @@
 
 		?>
 	</p>
+	<p>
+		<?php
+		// Create an array with several elements in it,
+		// then sort it and print the joined elements to the screen
+		$rideshare = array("Uber", "Lyft", "Juno", "Maven");
+		sort($rideshare);
+		print join(", ", $rideshare);//it works for strings too", " is to add a comma and a space
+		?>
+	</p>
+	<p>
+		<?php
+		// Reverse sort your array and print the joined elements to the screen
+		$rideshare = array("Uber", "Lyft", "Juno", "Maven");
+		rsort($rideshare);
+		print join(":", $rideshare); //":" adds a colon but not a space
+		?>
+	</p>
 </html>
